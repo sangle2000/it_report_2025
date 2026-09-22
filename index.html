@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Báo cáo thị trường nhân sự và mức lương IT Việt Nam 2025-2026. Tổng hợp các xu hướng công nghệ, mức lương trung bình và vị trí tuyển dụng hot nhất.">
+    <title>Báo Cáo Thị Trường IT Việt Nam 2025-2026</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <span class="badge">Báo cáo cập nhật 2025 - 2026</span>
+                <h1 class="title">Thị Trường IT <span class="text-gradient">Việt Nam</span></h1>
+                <p class="subtitle">Bức tranh toàn cảnh về mức lương, xu hướng tuyển dụng và nhu cầu nhân sự trong kỷ nguyên AI.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Quick Stats Section -->
+        <section class="quick-stats">
+            <div class="stat-card glass-panel">
+                <div class="stat-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01"/><path d="M17 12h.01"/><path d="M7 12h.01"/></svg>
+                </div>
+                <div class="stat-info">
+                    <p class="stat-label">Lương Trung Bình</p>
+                    <div class="stat-value-group">
+                        <h3 class="stat-value">43.2<span class="unit">Tr VNĐ</span></h3>
+                        <p class="stat-trend trend-down">↓ 1.1% so với 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-card glass-panel">
+                <div class="stat-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                </div>
+                <div class="stat-info">
+                    <p class="stat-label">Doanh Nghiệp Dùng AI</p>
+                    <div class="stat-value-group">
+                        <h3 class="stat-value">73<span class="unit">%</span></h3>
+                        <p class="stat-trend trend-up">↑ 65.1% tăng ngân sách</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-card glass-panel">
+                <div class="stat-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div class="stat-info">
+                    <p class="stat-label">Vị Trí Cấp Bậc HOT</p>
+                    <div class="stat-value-group">
+                        <h3 class="stat-value text-fit">Mid & Senior</h3>
+                        <p class="stat-trend trend-up">↑ Chiếm >60% nhu cầu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-card glass-panel">
+                <div class="stat-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <div class="stat-info">
+                    <p class="stat-label">Vị trí Top 1</p>
+                    <div class="stat-value-group">
+                        <h3 class="stat-value text-fit">Back-end</h3>
+                        <p class="stat-trend trend-up">↑ 54.2% nhu cầu</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Charts Section -->
+        <section class="charts-grid">
+            <!-- Chart 1 -->
+            <div class="chart-card glass-panel">
+                <div class="chart-header">
+                    <h2>Lương Trung Bình Theo Thành Phố</h2>
+                    <p>Mức lương trung bình (Triệu VNĐ/Tháng) tại 3 tâm điểm IT.</p>
+                </div>
+                <div class="chart-container">
+                    <canvas id="citySalaryChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Chart 2 -->
+            <div class="chart-card glass-panel">
+                <div class="chart-header">
+                    <h2>Top 5 Vị Trí Tuyển Dụng HOT Nhất</h2>
+                    <p>Tỷ lệ % doanh nghiệp có nhu cầu tuyển dụng các vị trí trong năm 2026.</p>
+                </div>
+                <div class="chart-container">
+                    <canvas id="rolesChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Chart 3 -->
+            <div class="chart-card glass-panel">
+                <div class="chart-header">
+                    <h2>Lương Theo Loại Hình Công Ty</h2>
+                    <p>So sánh thu nhập (Triệu VNĐ) giữa các mô hình kinh doanh.</p>
+                </div>
+                <div class="chart-container">
+                    <canvas id="companyTypeChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Chart 4 -->
+            <div class="chart-card glass-panel">
+                <div class="chart-header">
+                    <h2>Nhu Cầu Tuyển Dụng Theo Cấp Bậc</h2>
+                    <p>Tỷ lệ % ưu tiên tuyển dụng theo thâm niên (Có thể chọn nhiều).</p>
+                </div>
+                <div class="chart-container">
+                    <canvas id="levelChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deep Insights Section -->
+        <section class="insights glass-panel">
+            <h2 class="section-title">Phân Tích Chuyên Sâu</h2>
+            <div class="insights-grid visual-insights">
+                
+                <!-- Insight 1 -->
+                <div class="insight-box visual-box">
+                    <div class="insight-header">
+                        <div class="insight-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <h3>Freelance: Bùng Nổ Nội Địa</h3>
+                    </div>
+                    <div class="insight-visual-content">
+                        <div class="visual-stat">
+                            <span class="v-number">67%</span>
+                            <span class="v-label">Dự án đến từ VN (Tăng gấp đôi)</span>
+                        </div>
+                        <div class="visual-stat">
+                            <span class="v-number highlight-text">30.7</span>
+                            <span class="v-label">Triệu VNĐ thu nhập TB/tháng</span>
+                        </div>
+                        <div class="tags-container">
+                            <span class="tag"># Web Dev</span>
+                            <span class="tag"># Mobile App</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Insight 2 -->
+                <div class="insight-box visual-box">
+                    <div class="insight-header">
+                        <div class="insight-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+                        </div>
+                        <h3>Thay Đổi Tiêu Chí Đánh Giá</h3>
+                    </div>
+                    <div class="insight-visual-content">
+                        <p class="v-desc">Bằng cấp & Code thuần túy không còn là ưu tiên số 1. Nhà tuyển dụng đánh giá cao nhất:</p>
+                        
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span>Giải quyết vấn đề thực tế</span>
+                                <span>44.6%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 44.6%; background: var(--accent-color)"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span>Thích ứng & Học công nghệ mới</span>
+                                <span>43.4%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 43.4%; background: #ec4899"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer glass-panel">
+        <div class="container">
+            <p>Báo Cáo Tổng Hợp Thị Trường IT 2025-2026</p>
+            <p class="footer-note">Dữ liệu tổng hợp từ ITviec Report</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="./script.js"></script>
+</body>
+</html>
